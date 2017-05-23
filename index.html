@@ -2,10 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RJ Download App</title>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+    <title>Download ECApp</title>
 </head>
+<style>
+    #btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #bdbdbd;
+        width: 120px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        text-decoration: none;
+        color: #ffffff;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 900;
+        margin-left: -60px;
+        margin-top: -25px;
+    }
+</style>
 <body>
-    <div>Test</div>
-    <a href="itms-services://?action=download-manifest&url=https://dl.dropboxusercontent.com/s/c2mxrxq697vzwn9/app.plist">Install App</a>
+    <a id="btn" href="itms-services://?action=download-manifest&url=https://dl.dropboxusercontent.com/s/c2mxrxq697vzwn9/app.plist">Download</a>
 </body>
 </html>
