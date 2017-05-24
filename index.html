@@ -6,11 +6,16 @@
     <title>Download ECApp</title>
 </head>
 <style>
-    #btn {
-        font-family:Helvetica, Arial, sans-serif;
+    #download {
         position: absolute;
         top: 50%;
         left: 50%;
+        margin-left: -60px;
+        margin-top: -55px;
+    }
+    .btn {
+        font-family:Helvetica, Arial, sans-serif;
+        display: block;
         background-color: #02cbcc;
         width: 120px;
         height: 50px;
@@ -21,11 +26,19 @@
         border-radius: 5px;
         font-size: 18px;
         font-weight: 900;
-        margin-left: -60px;
-        margin-top: -25px;
+        /*margin-left: -60px;*/
+        /*margin-top: -25px;*/
+    }
+
+    #red {
+        background-color: #f35942;
+        margin-top: 10px;
     }
 </style>
 <body>
-    <a id="btn" href="itms-services://?action=download-manifest&url=https://dl.dropboxusercontent.com/s/c2mxrxq697vzwn9/app.plist">Download</a>
+    <div id="download">
+        <a class="btn" href="itms-services://?action=download-manifest&url=https://dl.dropboxusercontent.com/s/c2mxrxq697vzwn9/app.plist">iOS</a>
+        <a class="btn" id="red" href="https://www.dropbox.com/s/3dhj5jji41xx4zy/app-release.apk?dl=0">Android</a>
+    </div>
 </body>
 </html>
